@@ -13,14 +13,14 @@ export async function getServerSideProps(context: NextPageContext) {
                 destination: '/',
                 permanent: false
             }
-        }
+        };
     }
 
     return {
         props: {
             session
         }
-    }
+    };
 }
 
 const Notifications = () => {
@@ -29,7 +29,7 @@ const Notifications = () => {
             <Header label="Notifications" showBackArrow />
             <NotificationsFeed />
         </>
-    )
+    );
 }
 
 export default Notifications;
